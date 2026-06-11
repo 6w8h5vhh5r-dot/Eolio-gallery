@@ -1,11 +1,64 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eolio Gallery</title>
+  <meta name="description" content="Eolio 摄影作品集">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <h1>Eolio Gallery</h1>
-  <p>Cloudflare Pages is working.</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Eolio">Eolio</a>
+    <nav class="nav" aria-label="主要导航">
+      <a href="#albums">作品集</a>
+      <a href="#styles">风格</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Personal Photography Portfolio</p>
+      <h1>Eolio</h1>
+      <p class="intro">日系、简洁、带一点梦感的个人摄影作品集。</p>
+    </section>
+
+    <section id="albums" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Albums</p>
+        <h2>作品集</h2>
+      </div>
+      <div id="albumGrid" class="grid"></div>
+    </section>
+
+    <section id="styles" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Styles</p>
+        <h2>拍摄风格</h2>
+      </div>
+      <div id="styleGrid" class="grid compact"></div>
+    </section>
+
+    <section id="viewer" class="viewer" hidden>
+      <div class="viewer-head">
+        <button id="backBtn" class="ghost" type="button">返回</button>
+        <div>
+          <p id="viewerMeta" class="eyebrow"></p>
+          <h2 id="viewerTitle"></h2>
+          <p id="viewerDesc"></p>
+        </div>
+      </div>
+      <div id="photoFlow" class="photo-flow"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>预约与咨询</h2>
+      <p>请通过微信小程序 Eolio 查看档期，或替换这里为你的微信、邮箱、社交平台链接。</p>
+    </section>
+  </main>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

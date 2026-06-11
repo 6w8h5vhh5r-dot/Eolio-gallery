@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Cosplay",
+    "name": "Cosplay",
+    "description": "Cosplay风格\n擅长光影感。550R",
+    "cover": "styles/Cosplay/01.jpg",
+    "photos": [
+      "styles/Cosplay/01.jpg",
+      "styles/Cosplay/02.jpg"
+    ],
+    "count": 2
+  }
+]
